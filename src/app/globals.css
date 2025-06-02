@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+img {
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+h1 {
+  /* font-size: var(--text-HeaderSizeBig); */
+  font-family: var(--font-headers);
+  font-weight: 700;
+}
+h2 {
+  font-size: var(--text-HeaderSizeSmall);
+  font-family: var(--font-headers);
+}
+p,
+a {
+  font-size: var(--text-ParagraphSize);
+  font-family: var(--font-paragraph);
+}
+
+button {
+  cursor: pointer;
+}
+
+@theme inline {
+  /* This white is mainly used to background colors, and for some text colors(headers), where the background and white */
+  --color-main_white: #ffffff;
+  /* This color is used for bread text(<P>) and hover background colors */
+  --color-neutral_white: #efefef;
+  /* This color is used when there is need for a different white. we dont use this color that much. */
+  --color-alternativ_white: #dcdcdc;
+  /* This color is used for headers and backgrounds */
+  --color-main_black: #292929;
+  /* This color is used for bread text(<P>) and hover background colors */
+  --color-neutral_black: #3d3d3d;
+  /* This color is used when there is need for a different black. we dont use this color that much. */
+  --color-alternativ_black: #454545;
+  /* This font is for headers */
+  --font-headers: helvetica;
+  /* This font is for everthing else then headers */
+  --font-paragraph: helvetica;
+  /* This size is for h1 headers */
+  --text-HeaderSizeBig: 2rem;
+  /* This size is for headers below h1 */
+  --text-HeaderSizeSmall: 1.1rem;
+  /* This size is for paragraph, links and buttons */
+  --text-ParagraphSize: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
