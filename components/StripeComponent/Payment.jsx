@@ -37,9 +37,7 @@ const payment = () => {
         </div>
         <div className="grid-span-4 p-6 ">
           <h1 className="text-HeaderSizeSmall text-main_black pb-[20]">Checkout</h1>
-          {/* <p className="text-HeaderSizeSmall text-main_black pb-[20]">
-            Has requested <span>{amount}</span>
-          </p> */}
+
           <div className="">
             <Elements
               stripe={stripePromise}

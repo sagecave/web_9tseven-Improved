@@ -4,13 +4,8 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-img {
-  /* max-width: 100%; */
-  /* height: auto; */
-}
 
 h1 {
-  /* font-size: var(--text-HeaderSizeBig); */
   font-family: var(--font-headers);
   font-weight: 700;
 }

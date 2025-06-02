@@ -1,8 +1,8 @@
 "use client";
-import { useBasketStore } from "../../globalHooks/basketProduct";
+
 import { useQuery } from "@tanstack/react-query";
 import ProductCard from "../products/ProductCard";
-import { fetchProducts } from "../../api/products";
+import { fetchProducts } from "../../src/app/api/products_data/products";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -31,9 +31,6 @@ const ProductContainer = ({ header, paragraph, images, variant = "normalContaine
 
   switch (variant) {
     case "normalContainer":
-      //   imagesContainer = "grid grid-cols-2 gap-4 lg:pr-4";
-
-      //   textConatiner = "lg:col-start-1 lg:row-start-3 lg:col-end-3";
       imagesContainer = "grid col-start-1 col-end-2 gap-4  ";
       textConatiner = "lg:col-start-1 lg:row-start-3 lg:col-end-2 p-6 lg:p-0 ";
       imageGridClass = "lg:col-start-2 row-start-1 lg:row-end-4 row-span-1 hidden  lg:block";

@@ -62,41 +62,6 @@ const communityPage = () => {
 
           <div className="grid col-start-1 col-end-4 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-3 md:mt-13 md:ml-5 relative  ">
             <Image className="object-cover w-full md:w-full max-h-[870px]" src="/assets/images/chillingSammy.webp" alt="Person sitting down" width={500} height={300} />
-            {/* <div className="absolute left-0 right-0 bottom-0   ">
-              <h2 className="text-main_white text-HeaderSizeSmall mt-2">A GUIDANCE OF LIVING</h2>
-              <ul className="*:text-neutral_white *:text-ParagraphSize *:pt-4">
-                <li>
-                  <span className=" font-bold">Gratitude.</span> Thank you for this one life.
-                </li>
-                <li>
-                  <span className=" font-bold">Create a space for diversity. </span>We are all the same.
-                </li>
-                <li>
-                  <span className=" font-bold">It’s you vs you.</span> At your own pace, in your own time.
-                </li>
-                <li>
-                  <span className=" font-bold">Welcome all feelings.</span> To appreciate the highs, we have to appreciate the lows.
-                </li>
-                <li>
-                  <span className=" font-bold"> Nothing changes if nothing changes.</span> Start now and improve later.
-                </li>
-                <li>
-                  <span className=" font-bold">Challenge your limits.</span> Growth happens when you step outside your comfort zone.
-                </li>
-                <li>
-                  <span className=" font-bold">Fuel your passion, not just your body.</span> What drives you is as important as what nourishes you.
-                </li>
-                <li>
-                  <span className=" font-bold">You’re always developing, always evolving.</span> Enjoy the process.
-                </li>
-                <li>
-                  <span className=" font-bold">Holistic health.</span> Invest in your physical, mental, and emotional well-being.
-                </li>
-                <li>
-                  <span className=" font-bold">Community.</span> Create a space for inspiration & human connection.
-                </li>
-              </ul>
-            </div> */}
           </div>
 
           <div className="grid col-start-1 col-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:bottom-15 md:mt-15 md:mr-5 md:relative sm:mb-5">
