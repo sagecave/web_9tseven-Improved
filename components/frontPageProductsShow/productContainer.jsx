@@ -2,7 +2,7 @@
 import { useBasketStore } from "../../globalHooks/basketProduct";
 import { useQuery } from "@tanstack/react-query";
 import ProductCard from "../products/ProductCard";
-import { fetchProducts } from "../../api/products";
+import { fetchProducts } from "../../src/app/api/products_data/products";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -2,7 +2,7 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import ProductCard from "./ProductCard";
-import { fetchProducts } from "../../api/products";
+import { fetchProducts } from "../../src/app/api/products_data";
 
 export default function ProductsContainer() {
   const {
