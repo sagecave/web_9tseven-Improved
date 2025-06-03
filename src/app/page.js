@@ -6,6 +6,7 @@ import ProductLayout from "../../layouts/ProductLayout";
 import highlightFirst from "../../public/assets/images/highlightFirst2.jpg";
 import highlighSecound from "../../public/assets/images/highlighSecound.jpg";
 import highlightThrid from "../../public/assets/images/highlightThrid.jpg";
+import Newsletter from "../../components/newsletter/Newsletter";
 export default function Home() {
   const highlights = [
     {
@@ -119,6 +120,7 @@ With Social Run, you can show up just as you are. It's a space where you're met 
             ))}
           </div>
         </div>
+        <Newsletter></Newsletter>
       </section>
     </>
   );
