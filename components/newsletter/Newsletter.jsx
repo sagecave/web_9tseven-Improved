@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { fetchEmails } from "../../src/app/api/email_post_data/emailPost";
 const Newsletter = () => {
-  //   const [emailAddress, setEmailAddress] = useState();
   const [emailValidation, setEmailValidation] = useState(true);
   const [email, setEmail] = useState("");
   const emailRegex = /^[^\s@]+@[^\s@]+\.(com|dk|org|net|io|co|edu)$/i;
@@ -15,7 +14,6 @@ const Newsletter = () => {
     const emailValue = formJson.mail;
     const emailCheck = emailRegex.test(emailValue);
 
-    // setEmailAddress(formJson.mail);
     if (emailCheck) {
       try {
         console.log("fromJsonxx", emailValue);
