@@ -107,9 +107,9 @@ With Social Run, you can show up just as you are. It's a space where you're met 
           <div className="*:text-HeaderSizeSmall *:text-main_black *:font-bold mb-2 sm:mb-6 ">
             <h2>HIGHLIGHTS</h2>
           </div>
-          <div className="flex flex-row max-w-[100vw] overflow-x-scroll snap-x snap-mandatory ">
+          <div className="flex flex-row max-w-[100vw] overflow-x-scroll snap-x snap-mandatory gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-main_black" tabIndex={0}>
             {highlights.map((highlight) => (
-              <div className="w-fit pr-4 snap-start" key={highlight.id}>
+              <div className="w-fit pr-4 snap-start " key={highlight.id}>
                 <Image className="object-cover mb-4" src={highlight.image} alt={highlight.title} width={400} height={200} />
                 <div className="w-90">
                   <h2 className=" text-HeaderSizeSmall text-main_black">{highlight.title}</h2>

@@ -32,20 +32,22 @@ const Newsletter = () => {
   return (
     <div className="flex flex-col gap-5 mt-5 sm:mt-0">
       <h2 className=" text-HeaderSizeSmall">JOIN THE 9TSEVEN NEWSLETTER</h2>
-      <form method="post" onSubmit={handleSubmit}>
-        <input className=" border-2 border-main_white w-auto md:w-[20rem]  p-2" type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email address" name="mail" required></input>
-        <button className="border-2 border-main_white border-l-[0] w-[5rem]  p-2 hover:bg-alternativ_black " type="submit">
-          Submit
-        </button>
-        {!emailValidation && <p className=" text-red-400 mt-1">Email must include @ and end with .com or .dk</p>}
-        <div>
-          <div className="flex flex-row gap-2 mt-2">
-            <input type="checkbox" required name="mailCheckBox"></input>
-            <p>I accept the terms</p>
+      <label aria-label="Newsletter">
+        <form method="post" onSubmit={handleSubmit}>
+          <input className=" border-2 border-main_white w-auto md:w-[20rem]  p-2" type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email address" name="mail" required></input>
+          <button className="border-2 border-main_white border-l-[0] w-[5rem]  p-2 hover:bg-alternativ_black " type="submit">
+            Submit
+          </button>
+          {!emailValidation && <p className=" text-red-400 mt-1">Email must include @ and end with .com or .dk</p>}
+          <div>
+            <div className="flex flex-row gap-2 mt-2">
+              <input type="checkbox" required name="mailCheckBox"></input>
+              <p>I accept the terms</p>
+            </div>
+            <p>Read terms</p>
           </div>
-          <p>Read terms</p>
-        </div>
-      </form>
+        </form>
+      </label>
     </div>
   );
 };

@@ -87,7 +87,7 @@ export default function SingleProductPage() {
       </div>
 
       <div className="relative w-[100vw] max-w-[400px]  md:max-w-[500px] bottom-10">
-        <motion.ul className="flex overflow-x-scroll sm:gap-10 snap-x snap-mandatory gap-20 ">
+        <motion.ul className="flex overflow-x-scroll sm:gap-10 snap-x snap-mandatory gap-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-main_black" tabIndex={0}>
           {images.map((image, index) => (
             <li key={index} className={` w-full min-w-full md:w-[500px] snap-x snap-mandatory snap-start`}>
               <img src={image} alt={`Product Image ${index + 1}`} width={500} height={500} className=" h-auto w-100 md:w-[30rem] object-cover max-w-none" />
