@@ -1,39 +1,7 @@
 import Image from "next/image";
-import eventFirst from "../../../public/assets/images/eventFirst.jpg";
-import eventSecound from "../../../public/assets/images/eventSecound.jpg";
-import eventThrid from "../../../public/assets/images/eventThrid.jpg";
-import eventForth from "../../../public/assets/images/eventForth.jpg";
+
+import EventCards from "../../../components/eventCard/EventCards";
 const communityPage = () => {
-  const events = [
-    {
-      id: 1,
-      image: eventFirst,
-      title: "Community Run",
-      date: "2023-10-01",
-      description: "Join us for a community run to connect and inspire each other.",
-    },
-    {
-      id: 2,
-      image: eventSecound,
-      title: "Yoga in the Park",
-      date: "2023-10-15",
-      description: "Relax and rejuvenate with a yoga session in the park.",
-    },
-    {
-      id: 3,
-      image: eventThrid,
-      title: "Charity Run",
-      date: "2023-11-05",
-      description: "Run for a cause and support local charities.",
-    },
-    {
-      id: 4,
-      image: eventForth,
-      title: "Trail Adventure",
-      date: "2023-11-20",
-      description: "Explore nature with a guided trail run.",
-    },
-  ];
   return (
     <section className="grid grid-cols-subgrid col-start-1 col-end-4">
       <div className="grid col-start-2 col-end-3 mt-30 mb-4">
@@ -41,15 +9,9 @@ const communityPage = () => {
           <h2>EVENTS</h2>
           <h2>MAY 2025</h2>
         </div>
-        <div className="flex flex-row max-w-[100vw] overflow-x-scroll snap-x snap-mandatory gap-4 mt-4">
-          {events.map((event) => (
-            <Image key={event.id} className="object-cover  mb-4" src={event.image} alt={event.title} width={400} height={200} />
-          ))}
-        </div>
+        <EventCards />
       </div>
-      <div className="grid col-start-1 col-end-4 object-cover">
-        <Image className="object-cover  w-full" src="/assets/images/Better.webp" alt="Community grup running" width={500} height={300} />
-      </div>
+
       <div className="grid grid-cols-subgrid col-start-1 col-end-4  mt-4 ">
         <div className=" grid-cols-subgrid col-start-1 col-end-4 md:col-start-2 md:col-end-3 md:grid-cols-[3fr_4fr] grid">
           <div className=" col-start-2 col-end-3 mt-4 mb-4 md:col-start-1 md:col-end-2 md:w-[70%] ">
