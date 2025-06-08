@@ -30,7 +30,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="flex flex-col gap-5 mt-5 sm:mt-0">
+    <div className="flex flex-col gap-5 mt-5 sm:mt-0 ">
       <h2 className=" text-HeaderSizeSmall">JOIN THE 9TSEVEN NEWSLETTER</h2>
       <label aria-label="Newsletter">
         <form method="post" onSubmit={handleSubmit}>
