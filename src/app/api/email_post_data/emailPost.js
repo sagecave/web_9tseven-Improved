@@ -1,5 +1,5 @@
 export const fetchEmails = async (email) => {
-  const url = "https://rqumbnvfrmsowdaxrvkm.supabase.co/rest/v1/sub_newsletter";
+  const url = process.env.NEXT_PUBLIC_DATA_SUPABASE_NEWSLETTER_URL;
   const API_KEY = process.env.NEXT_PUBLIC_DATA_SUPABASE_ANON_KEY;
 
   const options = {
