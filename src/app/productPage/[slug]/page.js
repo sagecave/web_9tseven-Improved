@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useBasketStore } from "../../../../globalHooks/basketProduct";
 import { useStore } from "../../../../globalHooks/basketHooks";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function SingleProductPage() {
   const params = useParams();
@@ -90,12 +91,12 @@ export default function SingleProductPage() {
         <motion.ul className="flex overflow-x-scroll sm:gap-10 snap-x snap-mandatory gap-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-main_black" tabIndex={0}>
           {images.map((image, index) => (
             <li key={index} className={` w-full min-w-full md:w-[500px] snap-x snap-mandatory snap-start`}>
-              <img src={image} alt={`Product Image ${index + 1}`} width={500} height={500} className=" h-auto w-100 md:w-[30rem] object-cover max-w-none" />
+              <Image loading="eager" priority src={image} alt={`Product Image ${index + 1}`} width={500} height={500} className=" h-auto w-100 md:w-[30rem] object-cover max-w-none" />
             </li>
           ))}
         </motion.ul>
       </div>
-      <div className=" text-ParagraphSize text-main_black md:ml-6 md:w-[70%] md:relative md:top-[-45px] flex flex-col justify-between gap-2 sm:gap-0">
+      <div className=" text-ParagraphSize text-main_black md:ml-6 md:w-[70%] md:relative md:top-[-45px] flex flex-col justify-between gap-2 sm:gap-0 ">
         <div className="flex flex-col gap-2">
           <h2 className=" text-HeaderSizeSmall text-main_black">{productsData[0]?.title}</h2>
           <p>{productsData[0]?.price} kr</p>

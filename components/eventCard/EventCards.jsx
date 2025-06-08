@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import eventFirst from "../../public/assets/images/eventFirst.jpg";
-import eventSecound from "../../public/assets/images/eventSecound.jpg";
-import eventThrid from "../../public/assets/images/eventThrid.jpg";
-import eventForth from "../../public/assets/images/eventForth.jpg";
+import eventFirst from "../../public/assets/images/eventFirst.webp";
+import eventSecound from "../../public/assets/images/eventSecound.webp";
+import eventThrid from "../../public/assets/images/eventThrid.webp";
+import eventForth from "../../public/assets/images/eventForth.webp";
 
 const EventCards = () => {
   const events = [
