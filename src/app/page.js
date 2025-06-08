@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <section className=" h-[50vh] md:h-[99vh] col-start-1 col-end-4 grid overflow-hidden  relative">
-        <Image src="/assets/images/Better2.webp" alt="hero" fill className="md:w-full h-full  overflow-hidden  object-cover " />
+        <Image src="/assets/images/Better2.webp" alt="hero" fill className="  overflow-hidden  object-cover " />
       </section>
       <section className="grid md:col-start-2 md:col-end-3 col-start-1 col-end-4 md:mt-30 md:mb-15">
         <ProductLayout>
@@ -50,8 +50,8 @@ export default function Home() {
       </section>
       <section className=" h-[70vh] md:h-[100vh] col-start-1 col-end-4 grid overflow-hidden  relative md:mt-10">
         <div className="flex">
-          <Image src="/assets/images/doublePicSammyGray.webp" alt="hero" width={1000} height={1000} className="md:w-full h-full  overflow-hidden  object-cover hover:saturate-50 " />
-          <Image src="/assets/images/doublePicSammyGray2.webp" alt="hero" width={1000} height={1000} className="md:w-full h-full  overflow-hidden  object-cover  saturate-0 hover:saturate-100 hidden md:block" />
+          <Image src="/assets/images/doublePicSammyGray.webp" alt="hero" width={1000} height={1000} className="overflow-hidden  object-cover hover:saturate-50 " />
+          <Image src="/assets/images/doublePicSammyGray2.webp" alt="hero" width={1000} height={1000} className=" overflow-hidden  object-cover  saturate-0 hover:saturate-100 hidden md:block" />
           <Link href="/productPage" className="absolute bottom-10 left-6 sm:left-15 border-main_white border-2 text-main_white p-3 text-ParagraphSize hover:bg-alternativ_black">
             SHOP PERFROMANCE
           </Link>
@@ -73,7 +73,7 @@ With Social Run, everyone is invited — no matter your background, pace, or exp
         </ProductLayout>
       </section>
       <section className="h-[50vh] md:h-[100vh] col-start-1 col-end-4 grid overflow-hidden  relative">
-        <Image src="/assets/images/communitySammy.webp" alt="hero" fill className="md:w-full h-full  overflow-hidden  object-cover " />
+        <Image src="/assets/images/communitySammy.webp" alt="hero" fill className=" overflow-hidden  object-cover " />
         <div className="absolute bottom-10 md:bottom-20 left-6 sm:left-15">
           <div className="mb-8 hidden sm:block">
             <h2 className="mb-2">COMMUNITY</h2>
