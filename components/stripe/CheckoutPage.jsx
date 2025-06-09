@@ -42,7 +42,7 @@ const CheckoutPage = ({ amount }) => {
       elements,
       clientSecret,
       confirmParams: {
-        return_url: "https://web-9tseven.vercel.app/payment-success?amount=" + amount,
+        return_url: "https://web-9tseven-improved.vercel.app/payment-success?amount=" + amount,
       },
     });
     if (stripeError) {
