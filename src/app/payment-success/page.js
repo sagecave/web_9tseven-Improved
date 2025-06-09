@@ -7,7 +7,7 @@ const paymentSuccessPage = ({ searchParams }) => {
   const { amount } = React.use(searchParams);
 
   return (
-    <section className="grid col-start-2 col-end-3 h-[80vh] ">
+    <section className="grid col-start-2 col-end-3 h-[80vh] mt-20">
       <div className="flex justify-center h-auto mt-10 mb-10">
         <div className=" border-2 border-alternativ_white w-1/2 p-6 flex flex-col justify-center items-center rounded-lg shadow-lg">
           <h1 className="text-HeaderSizeSmall text-main_black pb-[20]">Payment Success</h1>

@@ -18,7 +18,6 @@ export const useStore = create((set) => ({
       productQuantities: {
         ...state.productQuantities,
         [id]: Math.max((state.productQuantities[id] || 0) - 1, 0),
-        // [id]: (state.productQuantities[id] || 0) - 1,
       },
     })),
 

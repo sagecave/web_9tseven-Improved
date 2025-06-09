@@ -21,7 +21,7 @@ const payment = () => {
   }, 0);
 
   const amount = totalPrices;
-  // const amount = 1;
+
   return (
     <div>
       <div className="  h-auto grid grid-cols-1 md:grid-cols-2">
